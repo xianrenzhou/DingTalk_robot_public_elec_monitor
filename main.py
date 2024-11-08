@@ -30,7 +30,7 @@ def get_elec(url,payload,headers):
 
     # 如果需要，将结果转换为字符串
     current_time_str = current_time.strftime('%Y-%m-%d %H:%M:%S')
-    flag = elec < 15
+    flag = elec < 20
     return f"{current_time_str}  \n付费电量：{elec}\n免费电量：{elecfree}\n电压:{float(vtotal):.2f}\n电流:{float(itotal):.2f}\n功率：{round(float(vtotal) * float(itotal), 2)}",flag
 
 
